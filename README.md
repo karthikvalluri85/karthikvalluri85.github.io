@@ -2,7 +2,7 @@
 
 Personal portfolio of **Karthik Valluri**, data & AI delivery leader with 18+ years across data platforms, BI and AI-assisted engineering.
 
-- Live site: https://karthikvalluri85.github.io
+- Live site: https://karthik.datagunner.com
 - Blog: https://www.datagunner.com
 - LinkedIn: https://www.linkedin.com/in/karthikvalluri85
 
