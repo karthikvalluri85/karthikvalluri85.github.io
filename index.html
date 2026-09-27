@@ -52,6 +52,9 @@ a{color:inherit}
 .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;gap:24px;min-height:60px;flex-wrap:wrap}
 .brand{font:800 18px/1 var(--display);letter-spacing:-.02em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.bname{display:flex;flex-direction:column;gap:3px}
+.bname small{font:400 11px/1 var(--mono);letter-spacing:0;color:var(--muted)}
+.brand:hover small{color:var(--accent)}
 .brand i{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:8px;background:var(--ink);color:var(--bg);font:500 12px/1 var(--mono);font-style:normal}
 .nav ul{display:flex;gap:22px;list-style:none;margin:0 0 0 auto;padding:0;font:500 13px/1 var(--mono)}
 .nav ul a{text-decoration:none;color:var(--muted)}
@@ -183,7 +186,7 @@ footer{padding-block:40px;color:var(--muted);font:400 13px/1.6 var(--mono);displ
 <!-- ============ NAV ============ -->
 <nav class="nav" aria-label="Main">
   <div class="wrap">
-    <a class="brand" href="#top"><i>KV</i>DataGunner</a>
+    <a class="brand" href="https://www.datagunner.com" target="_blank" rel="noopener" title="Read my blogs on DataGunner"><i>KV</i><span class="bname">DataGunner<small>want to read my blogs? ↗</small></span></a>
     <ul>
       <li><a href="#thesis">thesis</a></li>
       <li><a href="#work">work</a></li>
@@ -192,9 +195,9 @@ footer{padding-block:40px;color:var(--muted);font:400 13px/1.6 var(--mono);displ
       <li><a href="#writing">writing</a></li>
       <li><a href="#contact">contact</a></li>
     </ul>
-    <!-- When your new CV is ready, upload cv.pdf to this repo and change this button to:
+    <!-- To offer your CV later, upload cv.pdf to this repo and add:
          <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Download CV ↗</a> -->
-    <a class="btn" href="https://www.datagunner.com" target="_blank" rel="noopener">Read the blog ↗</a>
+    <a class="btn" href="https://www.linkedin.com/in/karthikvalluri85" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
   </div>
 </nav>
 
@@ -218,8 +221,7 @@ footer{padding-block:40px;color:var(--muted);font:400 13px/1.6 var(--mono);displ
   <div class="wrap">
     <div class="stats">
       <div><strong>18+</strong><span>years in data, BI &amp; AI</span></div>
-      <!-- Replace the placeholder with your real number, e.g. 60+ -->
-      <div><strong><span class="ph">XX</span></strong><span>engineers led across teams</span></div>
+            <div><strong>40</strong><span>engineers led on one account</span></div>
       <div><strong>4</strong><span>cloud &amp; data certifications</span></div>
       <div><strong>20</strong><span>published articles since 2018</span></div>
     </div>
@@ -317,7 +319,7 @@ footer{padding-block:40px;color:var(--muted);font:400 13px/1.6 var(--mono);displ
         <div>
           <h3>Senior Manager, Data Delivery</h3>
           <p class="org">Ascendion · Bengaluru</p>
-          <p>Lead a multi-team delivery organisation for a Fortune-500 high-tech client across data engineering, BI and AI-assisted engineering. Own pre-sales architecture, SOWs, estimation and account growth. <span class="ph">Add: team size, revenue, one outcome in $ or %</span></p>
+          <p>Lead a 40-person, multi-team delivery organisation for a Fortune-500 high-tech client across data engineering, BI and AI-assisted engineering, with close to $3M in projected annual revenue. Own pre-sales architecture, SOWs, estimation and account growth.</p>
         </div>
       </div>
       <div class="role">
