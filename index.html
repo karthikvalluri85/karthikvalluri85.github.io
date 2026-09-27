@@ -68,10 +68,14 @@ a{color:inherit}
 .hero{position:relative;padding-block:clamp(48px,8vw,96px) 40px;overflow:hidden}
 .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
 @media (max-width:900px){.hero .wrap{grid-template-columns:1fr}}
+.who{display:flex;align-items:center;gap:16px;margin:0 0 22px}
+.avatar{width:84px;height:84px;border-radius:50%;flex-shrink:0;object-fit:cover;border:2px solid var(--surface);box-shadow:0 0 0 2px var(--accent)}
+.avatar.mono-av{display:grid;place-items:center;background:var(--ink);color:var(--bg);font:500 22px/1 var(--mono)}
+.who .query{margin:0}
 .query{font:400 13px/1.5 var(--mono);color:var(--muted);margin:0 0 22px}
 .query b{color:var(--accent);font-weight:500}
 .query s{text-decoration:none;color:var(--signal)}
-h1{font:800 clamp(52px,8.4vw,112px)/.9 var(--display);letter-spacing:-.045em;margin:0;text-wrap:balance}
+h1{font:800 clamp(40px,5.4vw,70px)/.95 var(--display);letter-spacing:-.04em;margin:0;text-wrap:balance}
 h1 span{display:block;color:var(--accent)}
 .lede{font-size:clamp(18px,2vw,21px);line-height:1.5;max-width:34ch;margin:26px 0 30px;color:var(--ink)}
 .lede em{font-style:normal;background:linear-gradient(transparent 62%,var(--accent-soft) 62%)}
@@ -214,7 +218,11 @@ footer{padding-block:40px;color:var(--muted);font:400 13px/1.6 var(--mono);displ
 <header class="hero" id="top">
   <div class="wrap">
     <div>
-      <p class="query"><b>SELECT</b> leader <b>FROM</b> data_and_ai <b>WHERE</b> years &gt; <s>18</s> <b>AND</b> ships = <s>TRUE</s>;</p>
+      <div class="who">
+        <!-- Profile photo: add photo.jpg to the repo root -->
+        <img class="avatar" src="photo.jpg" alt="Karthik Valluri" width="84" height="84" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar mono-av',textContent:'KV'}))">
+        <p class="query"><b>SELECT</b> leader <b>FROM</b> data_and_ai <b>WHERE</b> years &gt; <s>18</s> <b>AND</b> ships = <s>TRUE</s>;</p>
+      </div>
       <h1>Karthik Valluri<span>Data &amp; AI delivery leader.</span></h1>
       <p class="lede">I build the teams, platforms and <em>AI-assisted engineering</em> practices that turn enterprise data into decisions, and I run the delivery that gets them into production.</p>
       <div class="cta">
