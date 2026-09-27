@@ -155,8 +155,14 @@ a.repo:hover{border-color:var(--accent);transform:translateY(-3px)}
 .creds li{display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding-block:14px;border-bottom:1px solid var(--line)}
 .creds li b{font:600 18px/1.25 var(--display);letter-spacing:-.01em}
 .creds li span{font:400 12px/1.3 var(--mono);color:var(--muted);text-align:right;flex-shrink:0}
-.creds h3.sub-h{margin-top:28px;border-bottom-width:1px}
-.creds .past li b{font-size:16px;font-weight:400;color:var(--muted)}
+.creds li a{text-decoration:none}.creds li a:hover b{color:var(--accent)}
+.past-wrap{margin-top:48px}
+.past-wrap h3{font:500 12px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 6px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.past{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);column-gap:40px}
+@media (max-width:760px){.past{grid-template-columns:1fr}}
+.past li{display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding-block:11px;border-bottom:1px solid var(--line)}
+.past li b{font:400 15px/1.35 var(--body);color:var(--ink)}
+.past li span{font:400 12px/1.3 var(--mono);color:var(--muted);text-align:right;flex-shrink:0}
 .creds li.slot b,.creds li.slot span{color:var(--signal)}
 
 /* writing */
@@ -224,7 +230,7 @@ footer{padding-block:40px;color:var(--muted);font:400 13px/1.6 var(--mono);displ
     <div class="stats">
       <div><strong>18+</strong><span>years in data, BI &amp; AI</span></div>
             <div><strong>40</strong><span>engineers led on one account</span></div>
-      <div><strong>3</strong><span>open-source AI projects</span></div>
+      <div><strong>15+</strong><span>certifications: AWS, Azure, Snowflake, Databricks, Anthropic</span></div>
       <div><strong>20</strong><span>published articles since 2018</span></div>
     </div>
   </div>
@@ -399,16 +405,11 @@ footer{padding-block:40px;color:var(--muted);font:400 13px/1.6 var(--mono);displ
       <div>
         <h3>Active certifications</h3>
         <ul>
-          <li><b>Claude Certified Associate – Foundations</b><span>Anthropic</span></li>
-          <li><b>SnowPro Core</b><span>Snowflake</span></li>
+          <li><a href="https://www.credly.com/badges/87391bc3-b57d-41b2-adac-3b512db9b449" target="_blank" rel="noopener"><b>Claude Certified Associate – Foundations</b></a><span>Anthropic</span></li>
+          <li><a href="https://achieve.snowflake.com/7f5a0861-ad25-4f3c-bd4a-7f44c1a7a084?record_view=true" target="_blank" rel="noopener"><b>SnowPro Core</b></a><span>Snowflake · to 2028</span></li>
+          <li><a href="https://www.credential.net/d598d8c2-287b-41b2-9a22-f5a9fe0ba772" target="_blank" rel="noopener"><b>IT Project Management</b></a><span>ISB Executive Education</span></li>
           <!-- PLACEHOLDER: add new certifications here -->
           <li class="slot"><b>Next certification</b><span>add here</span></li>
-        </ul>
-        <h3 class="sub-h">Previously earned</h3>
-        <ul class="past">
-          <li><b>Azure Fundamentals</b><span>Microsoft</span></li>
-          <li><b>Azure Data Fundamentals</b><span>Microsoft</span></li>
-          <li><b>Lean Six Sigma Green Belt</b><span>&nbsp;</span></li>
         </ul>
       </div>
       <div>
@@ -425,6 +426,25 @@ footer{padding-block:40px;color:var(--muted);font:400 13px/1.6 var(--mono);displ
           <li><b>Cognos to SSRS Migration: A Brief Overview</b><span>article</span></li>
         </ul>
       </div>
+    </div>
+
+    <div class="past-wrap">
+      <h3>Earlier certifications</h3>
+      <ul class="past">
+        <li><b>AWS Certified Data Analytics – Specialty</b><span>AWS · 2022–2025</span></li>
+        <li><b>Databricks Certified Associate Developer for Apache Spark 3.0</b><span>Databricks · 2022–2024</span></li>
+        <li><b>Azure Data Engineer Associate</b><span>Microsoft · 2021–2023</span></li>
+        <li><b>Tableau Certified Data Analyst</b><span>Tableau · 2021–2023</span></li>
+        <li><b>Data Analyst Associate (Power BI)</b><span>Microsoft · 2020–2022</span></li>
+        <li><b>Azure Administrator Associate</b><span>Microsoft · 2021–2022</span></li>
+        <li><b>Power Platform Functional Consultant Associate</b><span>Microsoft · 2021–2022</span></li>
+        <li><b>Azure Fundamentals · Azure Data Fundamentals · Power Platform Fundamentals</b><span>Microsoft · 2021</span></li>
+        <li><b>Certified Scrum Product Owner</b><span>Scrum Alliance · 2018–2020</span></li>
+        <li><b>Professional Scrum Master (PSM I)</b><span>Scrum.org · 2018</span></li>
+        <li><b>PRINCE2 Agile Foundation</b><span>AXELOS</span></li>
+        <li><b>ITIL</b><span>AXELOS</span></li>
+        <li><b>Lean Six Sigma Green Belt</b><span>Varsigma · 2019</span></li>
+      </ul>
     </div>
   </div>
 </section>
